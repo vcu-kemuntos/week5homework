@@ -7,15 +7,15 @@ def find_greatest_number(incoming_list):
     Find the largest number in the list.
     """
     pass                                                                                            
-    Maximum=max(incoming_list)
-
+    incoming_list=[]
+    print(max(incoming_list))
 def find_least_number(incoming_list):
     """
     Required parameter, incoming_list, should be a list.
     Find the smallest/least number in the list.
     """
     pass
-    Minimum=min(incoming_list)
+    print(min(incoming_list))
 
 def add_list_numbers(incoming_list):
     """
@@ -24,7 +24,7 @@ def add_list_numbers(incoming_list):
     """
 
     pass
-    Total=sum(incoming_list)
+    print(sum(incoming_list))
 
 def longest_value_key(incoming_dict):
     """
@@ -33,4 +33,4 @@ def longest_value_key(incoming_dict):
     """
     pass
     incoming_dict=["may", "June", "August", "September"]
-    Longest=sorted(incoming_dict,key=len)
+    print (sorted(incoming_dict,key=len))
