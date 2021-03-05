@@ -7,7 +7,7 @@ def find_greatest_number(incoming_list):
     Find the largest number in the list.
     """
     pass                                                                                            
-    incoming_list=[]
+
     print(max(incoming_list))
 def find_least_number(incoming_list):
     """
@@ -32,5 +32,4 @@ def longest_value_key(incoming_dict):
     Find the KEY that has a value with the highest length, use the len() function
     """
     pass
-    incoming_dict=["may", "June", "August", "September"]
     print (sorted(incoming_dict,key=len))
