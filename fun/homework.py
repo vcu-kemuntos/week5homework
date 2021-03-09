@@ -27,10 +27,10 @@ def add_list_numbers(incoming_list):
     Add all the values together and return it.
     """
 
-    sum=0
-    for x in incoming_list:
-         sum=sum+x
-    return sum
+    summation=0
+    for x in range(0,len(incoming_list)):
+         summation += incoming_list[x]
+    return summation
 
 
 def longest_value_key(incoming_dict):
@@ -39,7 +39,7 @@ def longest_value_key(incoming_dict):
     Find the KEY that has a value with the highest length, use the len() function
     """
 
-    longest_key = max(incoming_dict,key=len)
+    longest_key = max(incoming_dict,key=lambda x: len(x))
     return longest_key
 
 
