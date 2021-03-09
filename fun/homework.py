@@ -6,10 +6,8 @@ def find_greatest_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the largest number in the list.
     """
-
     greatest_number = max(incoming_list)
     return greatest_number
-
 
 def find_least_number(incoming_list):
     """
@@ -26,10 +24,7 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
-
-    summation=0
-    for x in range(0,len(incoming_list)):
-         summation += incoming_list[x]
+    summation = sum(incoming_list)
     return summation
 
 
@@ -39,7 +34,7 @@ def longest_value_key(incoming_dict):
     Find the KEY that has a value with the highest length, use the len() function
     """
 
-    longest_key = max(incoming_dict,key=lambda x: len(x))
+    longest_key = len(max(incoming_dict, key=len))
     return longest_key
 
 
